@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#dce3e8" />
+    <meta name="description" content="Kalyan Gowda and Sanjana Paddambail invite you to celebrate their wedding." />
+    <title>Kalyan Gowda Weds Sanjana Paddambail</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=Italiana&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <canvas class="cloud-canvas" aria-hidden="true"></canvas>
+    <main class="story" aria-label="A wedding story in six scenes">
+      <section class="scene intro" id="scene-1" aria-label="Cloud introduction">
+        <div class="intro-wash" aria-hidden="true"></div>
+        <div class="intro-copy">
+          <h1 aria-label="Kalyan Gowda Weds Sanjana Paddambail">Kalyan Gowda <span class="weds">Weds</span><br />Sanjana Paddambail</h1>
+          <span class="intro-rule" aria-hidden="true"></span>
+          <p>A place to gather. A day to remember.</p>
+        </div>
+        <span class="scroll-cue" aria-hidden="true">SCROLL TO BEGIN <span>↓</span></span>
+      </section>
+
+      <section class="scene photograph" id="scene-2" aria-label="Wedding photograph 1" data-scene="2">
+        <img class="scene-image" src="images/scene-02-cutout.png" alt="The stone temple pavilion at Bhoga Nandeeshwara." fetchpriority="high" />
+        <div class="image-placeholder"><span>YOUR PHOTOGRAPH</span><small>images/scene-02.png</small></div>
+        <div class="scene-caption"><span class="eyebrow">BHOGA NANDEESHWARA</span><h2>A beautiful place<br />to begin forever.</h2></div>
+      </section>
+      <section class="scene photograph groom-scene" id="scene-3" aria-label="The groom, Kalyan Gowda, from Kolar" data-scene="3">
+        <img class="scene-image" src="images/DSC03720.jpg" alt="Kalyan Gowda in a traditional wedding sherwani." loading="lazy" />
+        <div class="image-placeholder"><span>THE GROOM</span><small>Kalyan Gowda · Kolar</small></div>
+        <div class="scene-caption groom-caption"><span class="eyebrow">THE GROOM · KOLAR, KARNATAKA</span><h2>Kalyan Gowda</h2><p class="groom-origin">From Kolar, with love and the blessings of family.</p><div class="groom-parents"><span>Son of</span><p><span>[Father’s name]</span><span class="parent-separator">&amp;</span><span>[Mother’s name]</span></p></div><div class="fun-facts"><span class="facts-label">A LITTLE ABOUT HIM</span><ul><li>Loves cycling</li></ul></div></div>
+      </section>
+      <section class="scene photograph bride-scene" id="scene-4" aria-label="The bride, Sanjana Paddambail" data-scene="4">
+        <img class="scene-image" src="images/DSC02969-Edit.jpg" alt="Sanjana Paddambail in a pink saree." loading="lazy" />
+        <div class="image-placeholder"><span>THE BRIDE</span><small>Sanjana Paddambail</small></div>
+        <div class="scene-caption bride-caption"><span class="eyebrow">THE BRIDE</span><h2>Sanjana<br />Paddambail</h2><div class="bride-family"><span>Daughter of</span><p>Shivaprasad <span class="parent-separator">&amp;</span> Sona Paddmbail</p></div><div class="fun-facts"><span class="facts-label">A LITTLE ABOUT HER</span><ul><li>PhD paglu</li><li>Crazy about mangoes</li><li>Loves cycling</li></ul></div></div>
+      </section>
+      <section class="scene photograph couple-scene" id="scene-5" aria-label="Kalyan and Sanjana invite you to celebrate with them" data-scene="5">
+        <img class="scene-image" src="images/couple-portrait.jpg" alt="Sanjana and Kalyan share a joyful moment together." loading="lazy" />
+        <div class="image-placeholder"><span>TOGETHER, AT LAST</span><small>Kalyan &amp; Sanjana</small></div>
+        <div class="scene-caption couple-caption"><span class="eyebrow">WITH OUR FAMILIES</span><h2>We would be<br />honoured by your presence.</h2><p>Please join us as we begin this new chapter together. Your blessings and company would mean the world to us.</p><a class="schedule-link" href="#scene-6">WEDDING DAY DETAILS <span aria-hidden="true">↓</span></a></div>
+      </section>
+      <section class="scene photograph final-scene schedule-scene" id="scene-6" aria-label="Wedding day schedule and muhurtham details" data-scene="6"><div class="schedule-panel"><span class="eyebrow">THE WEDDING DAY</span><h2>A day of blessings<br />and celebration.</h2><div class="schedule-list"><div><span class="schedule-time">[Muhurtham time]</span><strong>Muhurtham</strong><small>The auspicious wedding ceremony</small></div><div><span class="schedule-time">[Add time]</span><strong>[Activity name]</strong><small>[Add a short detail]</small></div><div><span class="schedule-time">[Add time]</span><strong>[Activity name]</strong><small>[Add a short detail]</small></div></div><p class="schedule-note">We look forward to celebrating with you and your family.</p><div class="schedule-venue"><div class="schedule-venue-copy"><span class="eyebrow">VENUE &amp; DIRECTIONS</span><p class="venue-name">[Wedding venue name]</p><p class="venue-address">[Venue address and locality]</p><a class="schedule-link" href="#scene-6" aria-disabled="true">ADD GOOGLE MAPS LINK</a></div><div class="venue-qr" aria-label="Placeholder for wedding venue map QR code"><span>QR CODE</span><small>Add venue link to generate</small></div></div></div></section>
+
+    </main>
+    <div class="progress-indicator" aria-live="polite"><span id="current-scene">01</span><span class="progress-divider">/</span><span>06</span></div>
+    <script src="app.js" defer></script>
+  </body>
+</html>
