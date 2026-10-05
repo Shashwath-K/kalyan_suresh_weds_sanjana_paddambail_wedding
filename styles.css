@@ -23,6 +23,6 @@
 @media(prefers-reduced-motion:reduce){.wedding-doodles svg{animation:none}}
 .temple-caption{max-width:min(52rem,78vw)}.temple-caption h2{font-size:clamp(2.6rem,6vw,5.4rem)}.temple-caption p{max-width:41rem;margin:1.1rem 0 0;font-size:clamp(.78rem,1.15vw,.98rem);line-height:1.65;letter-spacing:.025em;color:rgba(255,255,255,.93);text-shadow:0 1px 12px rgba(0,0,0,.46)}
 @media(max-width:700px){.temple-caption{max-width:86vw;bottom:clamp(5.5rem,12vh,7rem)}.temple-caption h2{font-size:clamp(2.45rem,9vw,3.8rem)}.temple-caption p{max-width:35rem;margin-top:.8rem;font-size:.76rem;line-height:1.5}}
-#scene-2{background-image:none!important}
+#scene-2{--focus:50% 4%;--focus-mobile:50% 0%;background-image:none!important}
 .intro-copy h1{display:grid;gap:.08em}.intro-copy h1 .partner-name{display:block;color:#433725;-webkit-text-stroke:0;text-shadow:0 2px 15px rgba(255,255,255,.82),0 5px 28px rgba(255,255,255,.5)}.intro-copy h1 .weds{display:block;color:#9a6c2e;font-size:.47em;font-style:italic;letter-spacing:.13em;line-height:1.05;text-shadow:0 1px 10px rgba(255,255,255,.88)}.invocation{margin:0 0 1.3rem;color:#9a6c2e;font-family:var(--serif);font-size:clamp(1rem,1.65vw,1.45rem);font-weight:400;letter-spacing:.14em;text-shadow:0 1px 10px rgba(255,255,255,.9)}
 @media(max-width:700px){.invocation{font-size:clamp(.86rem,4vw,1.12rem);letter-spacing:.09em;margin-bottom:1.1rem}.intro-copy h1{gap:.1em}.intro-copy h1 .weds{font-size:.42em}}
