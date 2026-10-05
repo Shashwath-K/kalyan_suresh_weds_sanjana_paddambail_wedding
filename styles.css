@@ -687,23 +687,49 @@ main {
 }
 
 .temple-caption {
-  max-width: min(48rem, 82vw);
+  position: absolute;
+  left: var(--pad);
+  bottom: clamp(3.6rem, 8vh, 6.5rem);
+  max-width: min(44rem, 88vw);
   z-index: 2;
+  background: rgba(254, 250, 244, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: clamp(1.4rem, 2.5vw, 2.2rem) clamp(1.6rem, 3vw, 2.6rem);
+  border-radius: 16px;
+  border: 1px solid rgba(197, 160, 89, 0.45);
+  border-left: 4px solid var(--gold-accent);
+  box-shadow: 
+    0 16px 40px rgba(28, 18, 10, 0.16),
+    0 2px 8px rgba(197, 160, 89, 0.12),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
 }
 
 .temple-caption .eyebrow {
-  color: var(--gold-dark);
-  text-shadow: 0 1px 4px rgba(255, 255, 255, 0.95);
+  color: var(--vermilion);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  display: inline-block;
+  margin-bottom: 0.35rem;
+  text-shadow: none;
 }
 
 .temple-caption h2 {
+  font-family: var(--serif);
+  font-size: clamp(2rem, 4.2vw, 3.8rem);
+  font-weight: 400;
+  line-height: 1.05;
+  margin: 0.4rem 0 0.8rem 0;
   color: var(--ink-primary);
-  text-shadow: 0 2px 14px rgba(255, 255, 255, 0.95), 0 0 20px rgba(255, 255, 255, 0.9);
+  text-shadow: none;
 }
 
 .temple-caption p {
-  color: var(--ink-secondary);
-  text-shadow: 0 1px 8px rgba(255, 255, 255, 0.95);
+  font-size: clamp(0.92rem, 1.15vw, 1.04rem);
+  line-height: 1.7;
+  color: #38281b;
+  text-shadow: none;
+  max-width: 36rem;
 }
 
 /* =========================================================================
@@ -1309,6 +1335,24 @@ main {
 
   .scene-caption p {
     font-size: 0.78rem;
+    line-height: 1.55;
+  }
+
+  .temple-caption {
+    left: 1.1rem;
+    right: 1.1rem;
+    bottom: clamp(3.2rem, 7vh, 4.8rem);
+    padding: 1.15rem 1.25rem;
+    border-radius: 12px;
+  }
+
+  .temple-caption h2 {
+    font-size: clamp(1.8rem, 7.5vw, 2.6rem);
+    margin: 0.35rem 0 0.55rem 0;
+  }
+
+  .temple-caption p {
+    font-size: 0.82rem;
     line-height: 1.55;
   }
 
