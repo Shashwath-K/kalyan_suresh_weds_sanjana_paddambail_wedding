@@ -39,7 +39,7 @@
   observer.observe(intro);photoScenes.forEach(s=>{observer.observe(s);const image=s.querySelector('.scene-image'),placeholder=s.querySelector('.image-placeholder');if(!image)return;if(image.complete&&image.naturalWidth){if(placeholder)placeholder.classList.add('is-hidden');}else image.addEventListener('load',()=>{if(placeholder)placeholder.classList.add('is-hidden');},{once:true});image.addEventListener('error',()=>{image.style.display='none';},{once:true});});
   const venueScene=document.querySelector('#scene-7');if(venueScene)observer.observe(venueScene);
   function updateProgress(){const height=Math.max(1,intro.offsetHeight);scrollProgress=Math.max(0,Math.min(1,scrollY/height));const viewport=innerHeight||height;for(const scene of photoScenes){const top=scene.getBoundingClientRect().top;const progress=Math.max(0,Math.min(1,(viewport-top)/viewport));let scale=1.08-progress*.08,y=(1-progress)*1.2,blur=0;
-      if(scene.dataset.scene==='2'&&top<0){const exit=Math.max(0,Math.min(1,-top/viewport));scale=1+exit*.065;y=-exit*1.1;}
+      if(scene.dataset.scene==='2'){scale=1;y=0;}
       if(scene.dataset.scene==='3'){scale=1.16-progress*.16;y=(1-progress)*2.5;blur=(1-progress)*1.6;}
       scene.style.setProperty('--image-scale',scale.toFixed(4));scene.style.setProperty('--image-y',`${y.toFixed(3)}%`);scene.style.setProperty('--image-blur',`${blur.toFixed(2)}px`);}const temple=document.querySelector('#scene-2');if(running&&temple&&temple.getBoundingClientRect().bottom<=0)release();}
   addEventListener('scroll',updateProgress,{passive:true});addEventListener('resize',resize,{passive:true});updateProgress();
