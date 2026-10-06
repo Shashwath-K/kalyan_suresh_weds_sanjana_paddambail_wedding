@@ -100,11 +100,12 @@
   function dismissLoader() {
     if (!loader || loader.classList.contains('loader-out')) return;
     loader.classList.add('loader-out');
+    document.body.classList.add('invitation-ready');
     // Ensure smooth dissolve then hide from assistive tech and rendering
     setTimeout(() => {
       loader.setAttribute('aria-hidden', 'true');
       loader.style.display = 'none';
-    }, 1050);
+    }, 1150);
   }
 
   if (loader) {
@@ -126,6 +127,8 @@
         dismissLoader();
       }
     });
+  } else {
+    document.body.classList.add('invitation-ready');
   }
 
   /* =========================================================================
