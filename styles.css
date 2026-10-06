@@ -898,11 +898,26 @@ main {
    SCENE 5: COUPLE SCENE
    ========================================================================= */
 .couple-scene {
-  --focus: 67% 42%;
+  --focus: 35% 38%;
 }
 
 .couple-caption {
   max-width: min(44rem, 68vw);
+}
+
+@media (min-width: 701px) {
+  .couple-caption {
+    left: auto;
+    right: clamp(2rem, 5.5vw, 6.5rem);
+    max-width: min(38rem, 46vw);
+    text-align: left;
+  }
+
+  .photograph.couple-scene::after {
+    background: 
+      linear-gradient(270deg, rgba(16, 11, 8, 0.90) 0%, rgba(16, 11, 8, 0.68) 42%, rgba(16, 11, 8, 0.14) 75%, transparent 100%),
+      linear-gradient(0deg, rgba(16, 11, 8, 0.45) 0%, transparent 40%);
+  }
 }
 
 .schedule-link {
