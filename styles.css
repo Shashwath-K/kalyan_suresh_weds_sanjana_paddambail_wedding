@@ -107,43 +107,23 @@ main {
   visibility: hidden;
 }
 
-.intro-loader.loader-out .loader-card {
+.intro-loader.loader-out .loader-content {
   opacity: 0;
-  transform: scale(0.97) translateY(-10px);
-  filter: blur(6px);
-}
-
-.loader-ambient-glow {
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(ellipse at 50% 48%, rgba(255, 252, 246, 0.86) 0%, rgba(246, 239, 230, 0.78) 50%, rgba(235, 222, 206, 0.92) 100%);
-  pointer-events: none;
-  z-index: 1;
-}
-
-.loader-card {
-  position: relative;
-  z-index: 2;
-  max-width: min(56rem, calc(100% - 2.5rem));
-  background: rgba(254, 250, 243, 0.88);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-radius: 20px;
-  border: 1px solid rgba(197, 160, 89, 0.45);
-  box-shadow: 
-    0 20px 50px rgba(45, 30, 16, 0.16),
-    0 2px 10px rgba(197, 160, 89, 0.15),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.8);
-  padding: clamp(1.4rem, 2.8vh, 2.4rem) clamp(1.2rem, 3vw, 2.6rem);
-  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), filter 0.9s ease;
+  transform: translateY(-8px);
+  filter: blur(4px);
 }
 
 .loader-content {
   position: relative;
+  z-index: 2;
   text-align: center;
+  max-width: min(58rem, calc(100% - 2.5rem));
+  margin: auto;
+  padding: clamp(1.5rem, 3.5vh, 3rem) clamp(1rem, 3vw, 2.5rem);
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: opacity 0.9s cubic-bezier(0.4, 0, 0.2, 1), transform 0.9s cubic-bezier(0.4, 0, 0.2, 1), filter 0.9s ease;
 }
 
 /* Aura behind Ganesha */
@@ -165,20 +145,6 @@ main {
   pointer-events: none;
 }
 
-.loader-divine-ring {
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  border-radius: 50%;
-  border: 1px dashed rgba(197, 160, 89, 0.5);
-  animation: ring-rotate 28s linear infinite;
-  pointer-events: none;
-}
-
-@keyframes ring-rotate {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
-}
 
 @keyframes aura-pulse {
   0%, 100% { transform: scale(0.92); opacity: 0.65; }
