@@ -46,7 +46,7 @@
       let scale = 1.06 - progress * 0.06;
       let y = (1 - progress) * 1.5;
 
-      if (scene.id === 'scene-2') {
+      if (scene.id === 'scene-2' || scene.id === 'scene-3' || scene.id === 'scene-4') {
         scale = 1.0;
         y = 0;
       }
