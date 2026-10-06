@@ -736,7 +736,7 @@ main {
    SCENE 3 & 4: GROOM & BRIDE SCENES
    ========================================================================= */
 .groom-scene {
-  --focus: 66% 40%;
+  --focus: 68% 35%;
 }
 
 .groom-caption {
@@ -744,7 +744,7 @@ main {
 }
 
 .bride-scene {
-  --focus: 66% 42%;
+  --focus: 65% 35%;
 }
 
 .bride-caption {
