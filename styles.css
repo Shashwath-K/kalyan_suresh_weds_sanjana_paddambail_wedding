@@ -929,25 +929,37 @@ body.invitation-ready .intro-copy {
    SCENE 5: COUPLE SCENE
    ========================================================================= */
 .couple-scene {
-  --focus: 35% 38%;
+  --focus: center 22%;
+}
+
+.photograph.couple-scene::after {
+  background: 
+    linear-gradient(0deg, rgba(16, 11, 8, 0.90) 0%, rgba(16, 11, 8, 0.60) 26%, rgba(16, 11, 8, 0.10) 52%, transparent 75%);
 }
 
 .couple-caption {
-  max-width: min(44rem, 68vw);
+  left: var(--pad);
+  right: auto;
+  bottom: clamp(3.2rem, 7vh, 5.8rem);
+  max-width: min(44rem, 88vw);
+  text-align: left;
 }
 
 @media (min-width: 701px) {
   .couple-caption {
-    left: auto;
-    right: clamp(2rem, 5.5vw, 6.5rem);
-    max-width: min(38rem, 46vw);
+    left: var(--pad);
+    right: auto;
+    bottom: clamp(3.2rem, 7vh, 5.5rem);
+    max-width: min(38rem, 48vw);
     text-align: left;
-  }
-
-  .photograph.couple-scene::after {
-    background: 
-      linear-gradient(270deg, rgba(16, 11, 8, 0.90) 0%, rgba(16, 11, 8, 0.68) 42%, rgba(16, 11, 8, 0.14) 75%, transparent 100%),
-      linear-gradient(0deg, rgba(16, 11, 8, 0.45) 0%, transparent 40%);
+    background: rgba(22, 16, 13, 0.78);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    padding: clamp(1.2rem, 2vw, 1.8rem) clamp(1.4rem, 2.5vw, 2.2rem);
+    border-radius: 14px;
+    border: 1px solid rgba(212, 175, 100, 0.35);
+    border-left: 3px solid var(--gold-accent);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.4);
   }
 }
 
