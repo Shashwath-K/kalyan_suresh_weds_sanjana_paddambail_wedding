@@ -752,6 +752,7 @@ body.invitation-ready .intro-copy {
   margin: 0.4rem 0 0.8rem 0;
   color: var(--ink-primary);
   text-shadow: none;
+  text-wrap: balance;
 }
 
 .temple-caption p {
