@@ -1,5 +1,9 @@
 # Original camera photos stay local; the site uses optimized WebP copies.
 /images/*.jpg
+/images/*.jpeg
+/images/*.JPG
+/images/*.JPEG
+
 
 # Large local enhancement and backup intermediates are not deployed.
 /images/scene-02-enhanced.png
