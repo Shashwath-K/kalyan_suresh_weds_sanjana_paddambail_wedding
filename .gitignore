@@ -3,6 +3,8 @@
 /images/*.jpeg
 /images/*.JPG
 /images/*.JPEG
+!/images/og-preview.jpg
+
 
 
 # Large local enhancement and backup intermediates are not deployed.
