@@ -696,58 +696,68 @@ body.invitation-ready .intro-copy {
   position: absolute;
   left: var(--pad);
   bottom: clamp(3.6rem, 8vh, 6.5rem);
-  max-width: min(44rem, 88vw);
+  max-width: min(42rem, 88vw);
   z-index: 2;
-  background: rgba(254, 250, 244, 0.92);
+  background: rgba(255, 252, 255, 0.94);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
   padding: clamp(1.4rem, 2.5vw, 2.2rem) clamp(1.6rem, 3vw, 2.6rem);
   border-radius: 16px;
-  border: 1px solid rgba(197, 160, 89, 0.45);
-  border-left: 4px solid var(--gold-accent);
+  border: 1px solid rgba(184, 134, 54, 0.35);
+  border-left: 4px solid var(--gold-primary);
   box-shadow: 
-    0 16px 40px rgba(28, 18, 10, 0.16),
-    0 2px 8px rgba(197, 160, 89, 0.12),
-    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+    0 16px 40px rgba(90, 50, 95, 0.12),
+    0 2px 10px rgba(184, 134, 54, 0.1),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.85);
 }
 
 .temple-caption .eyebrow {
-  color: var(--vermilion);
+  font-family: var(--title-font);
+  color: var(--gold-dark);
   font-weight: 600;
-  letter-spacing: 0.22em;
+  font-size: clamp(0.66rem, 0.95vw, 0.78rem);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 0.35rem;
+  margin-bottom: 0.4rem;
   text-shadow: none;
 }
 
 .temple-caption h2 {
   font-family: var(--serif);
-  font-size: clamp(2rem, 4.2vw, 3.8rem);
-  font-weight: 400;
-  line-height: 1.05;
-  margin: 0.4rem 0 0.8rem 0;
-  color: var(--ink-primary);
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin: 0.2rem 0 0.7rem 0;
+  color: var(--plum-deep);
   text-shadow: none;
   text-wrap: balance;
 }
 
-.temple-caption h2 .ampersand,
-.ampersand {
-  font-family: "Cinzel", Georgia, serif;
-  font-size: 0.86em;
-  font-weight: 500;
-  display: inline-block;
-  vertical-align: 0.02em;
-  margin: 0 0.06em;
-  color: inherit;
+.temple-caption p {
+  font-family: var(--serif);
+  font-size: clamp(1.12rem, 1.4vw, 1.3rem);
+  line-height: 1.55;
+  color: var(--ink-primary);
+  text-shadow: none;
+  max-width: 38rem;
+  margin: 0;
 }
 
-.temple-caption p {
-  font-size: clamp(0.92rem, 1.15vw, 1.04rem);
-  line-height: 1.7;
-  color: #38281b;
-  text-shadow: none;
-  max-width: 36rem;
+.temple-caption p strong {
+  font-weight: 600;
+  color: var(--plum-deep);
+}
+
+.temple-kannada-meta {
+  font-family: var(--kannada-font);
+  font-size: clamp(0.92rem, 1.15vw, 1.05rem);
+  color: var(--plum-deep);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-top: 0.75rem !important;
+  padding-top: 0.65rem;
+  border-top: 1px dashed rgba(184, 134, 54, 0.35);
 }
 
 /* =========================================================================
