@@ -1539,3 +1539,139 @@ body.invitation-ready .intro-copy {
 
 
 }
+
+/* =========================================================================
+   GROOM CARD SPECIFIC STYLING (Card Details, Blessings & Floral Aesthetics)
+   ========================================================================= */
+
+.cover-blessings {
+  font-family: var(--serif);
+  font-size: clamp(0.85rem, 1.4vw, 1.05rem);
+  font-style: italic;
+  color: var(--rose-deep);
+  margin: 0.2rem 0 0.15rem 0;
+  letter-spacing: 0.03em;
+}
+
+.cover-parents {
+  font-family: var(--title-font);
+  font-size: clamp(0.72rem, 1.1vw, 0.86rem);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--ink-secondary);
+  font-weight: 500;
+  margin: 0.15rem 0 0.6rem 0;
+}
+
+.hastamelapa-icon {
+  display: inline-block;
+  vertical-align: middle;
+  width: clamp(26px, 3.2vw, 36px);
+  height: auto;
+  margin: 0 0.6rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.12));
+}
+
+.temple-kannada-meta {
+  font-family: var(--kannada-font);
+  font-size: clamp(0.92rem, 1.4vw, 1.15rem);
+  color: var(--gold-dark);
+  margin-top: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+.kannada-compliments {
+  font-family: var(--kannada-font);
+  font-size: clamp(0.92rem, 1.3vw, 1.08rem);
+  color: var(--ink-secondary);
+  margin: 0.45rem 0 0 0;
+  line-height: 1.5;
+}
+
+.compliment-sub {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: clamp(0.85rem, 1.2vw, 0.98rem);
+  color: var(--rose-deep);
+  margin: 0.2rem 0;
+}
+
+.awaiting-block {
+  margin-top: 1.4rem;
+  padding-top: 1.2rem;
+  border-top: 1px dashed rgba(179, 130, 52, 0.35);
+  text-align: center;
+}
+
+.awaiting-names {
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 1.6vw, 1.35rem);
+  color: var(--ink-primary);
+  margin: 0.3rem 0;
+  line-height: 1.4;
+}
+
+.awaiting-names small {
+  display: block;
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 0.88em;
+  color: var(--ink-muted);
+  margin-top: 0.2rem;
+}
+
+.kannada-awaiting {
+  font-family: var(--kannada-font);
+  font-size: clamp(0.88rem, 1.25vw, 1.02rem);
+  color: var(--gold-dark);
+  margin: 0.3rem 0 0 0;
+}
+
+.card-preview-actions {
+  margin: 2rem 0 1.5rem 0;
+  padding: 1.4rem 1.6rem;
+  background: rgba(255, 255, 255, 0.72);
+  border: 1px solid rgba(179, 130, 52, 0.35);
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 18px rgba(100, 60, 110, 0.06);
+}
+
+.card-thumb-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 0.8rem;
+}
+
+.card-thumb-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.4rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, var(--gold-dark), var(--gold-primary));
+  color: #fff !important;
+  text-decoration: none;
+  font-family: var(--title-font);
+  font-size: clamp(0.68rem, 1vw, 0.82rem);
+  letter-spacing: 0.12em;
+  font-weight: 600;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 4px 14px rgba(140, 96, 32, 0.25);
+}
+
+.card-thumb-btn.secondary {
+  background: linear-gradient(135deg, #6c4b75, #8d6796);
+  font-family: var(--kannada-font);
+  font-size: clamp(0.82rem, 1.1vw, 0.95rem);
+  letter-spacing: 0.04em;
+  box-shadow: 0 4px 14px rgba(108, 75, 117, 0.25);
+}
+
+.card-thumb-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
