@@ -109,8 +109,8 @@
   }
 
   if (loader) {
-    // Automatically transition seamlessly after 5.5 seconds
-    const timer = setTimeout(dismissLoader, 5500);
+    // Graceful transition allowing complete calligraphic handwriting animation
+    const timer = setTimeout(dismissLoader, 6500);
 
     if (skipBtn) {
       skipBtn.addEventListener('click', (e) => {
