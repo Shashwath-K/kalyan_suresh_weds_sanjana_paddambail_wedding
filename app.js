@@ -109,8 +109,8 @@
   }
 
   if (loader) {
-    // Automatically transition seamlessly after 7 seconds
-    const timer = setTimeout(dismissLoader, 7000);
+    // Automatically transition seamlessly after 5.5 seconds
+    const timer = setTimeout(dismissLoader, 5500);
 
     if (skipBtn) {
       skipBtn.addEventListener('click', (e) => {
