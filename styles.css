@@ -241,14 +241,16 @@ main {
   position: relative;
   display: inline-block;
   font-family: var(--script-font);
-  font-size: clamp(2.8rem, 7vw, 4.6rem);
-  line-height: 1.1;
+  font-size: clamp(1.4rem, 4.8vw, 4.2rem);
+  line-height: 1.15;
   color: var(--plum-deep);
   text-shadow: 0 2px 14px rgba(255, 255, 255, 0.9), 0 1px 4px rgba(84, 37, 78, 0.15);
   font-weight: 400;
   margin: 0;
   white-space: nowrap;
-  padding: 0 0.15em;
+  max-width: 95vw;
+  box-sizing: border-box;
+  padding: 0 0.08em;
 }
 
 .loader-name-script::after {
@@ -490,7 +492,7 @@ body.invitation-ready .intro-copy {
   font-family: var(--kannada-font);
   font-size: clamp(0.98rem, 1.8vw, 1.35rem);
   font-weight: 500;
-  color: var(--vermilion);
+  color: var(--plum-deep);
   margin: 0 0 0.25rem 0;
   letter-spacing: 0.06em;
   text-shadow: 0 1px 4px rgba(255, 255, 255, 0.9);
@@ -1863,14 +1865,16 @@ body.invitation-ready .intro-copy {
   position: relative;
   display: inline-block;
   font-family: var(--script-font) !important;
-  font-size: clamp(3.2rem, 8.5vw, 6.8rem) !important;
-  line-height: 1.12 !important;
+  font-size: clamp(1.4rem, 4.8vw, 4.4rem) !important;
+  line-height: 1.15 !important;
   color: var(--plum-deep) !important;
   text-shadow: 0 2px 18px rgba(255, 255, 255, 0.95), 0 2px 6px rgba(84, 37, 78, 0.12);
   font-weight: 400;
   letter-spacing: 0 !important;
   white-space: nowrap;
-  padding: 0 0.12em;
+  max-width: 95vw;
+  box-sizing: border-box;
+  padding: 0 0.08em;
 }
 
 .partner-name.script-title::after {
@@ -1957,3 +1961,102 @@ body.invitation-ready .partner-name.script-title.bride::after {
   color: var(--plum-deep) !important;
   letter-spacing: 0.06em;
 }
+
+/* =========================================================================
+   RESPONSIVE TYPOGRAPHY: COUPLE SCRIPT NAMES & ADAPTIVE CARD SIZING
+   Fluidly scales "Kalyan Suresh" & "Sanjana Paddambail" across all screens
+   ========================================================================= */
+@media (max-width: 768px) {
+  .partner-title-wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .partner-name.script-title,
+  .loader-name-script {
+    font-size: clamp(1.35rem, 5.8vw, 2.35rem) !important;
+    padding: 0 0.06em;
+    max-width: 95vw;
+  }
+}
+
+@media (max-width: 480px) {
+  .intro-copy {
+    padding: 1.1rem 0.5rem !important;
+    max-width: calc(100% - 0.9rem) !important;
+  }
+
+  .invitation-titles,
+  .intro-copy h1 {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .partner-name.script-title,
+  .loader-name-script {
+    font-size: clamp(1.2rem, 5.4vw, 1.7rem) !important;
+    padding: 0 0.04em;
+    max-width: 92vw;
+  }
+
+  .name-prefix {
+    font-size: 0.92rem;
+    margin-bottom: -0.22rem;
+  }
+
+  .partner-sub-parentage {
+    font-size: 0.72rem;
+    margin-top: -0.05rem;
+    padding: 0 0.4rem;
+  }
+
+  .kannada-invocation {
+    font-size: 0.96rem;
+  }
+
+  .invocation {
+    font-size: 0.66rem;
+    letter-spacing: 0.15em;
+  }
+
+  .cover-blessings,
+  .cover-parents {
+    font-size: 0.72rem;
+    padding: 0 0.4rem;
+  }
+
+  .golden-flourish,
+  .loader-divider {
+    width: clamp(115px, 34vw, 150px);
+  }
+
+  .intro-copy .weds {
+    gap: 0.5rem;
+  }
+
+  .intro-copy .weds .weds-line {
+    width: 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .intro-copy {
+    padding: 0.9rem 0.25rem !important;
+  }
+
+  .partner-name.script-title,
+  .loader-name-script {
+    font-size: clamp(1.05rem, 5.1vw, 1.32rem) !important;
+    padding: 0 0.02em;
+    max-width: 90vw;
+  }
+
+  .name-prefix {
+    font-size: 0.85rem;
+  }
+
+  .partner-sub-parentage {
+    font-size: 0.66rem;
+  }
+}
+
